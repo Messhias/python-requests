@@ -31,7 +31,7 @@ And that's it
 
 ## Authors
 
-* **Fabio William Conceição - Messhias** - *Initial work* - [PurpleBooth](https://github.com/Meshsias)
+* **Fabio William Conceição - Messhias** - *Initial work* - [Messhias](https://github.com/Meshsias)
 
 <!-- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. -->
 
