@@ -21,12 +21,16 @@ print("Total repositories", response_dict['total_count'])
 repo_dicts = response_dict['items']
 print("Repositories returned:", len(repo_dicts))
 
-names,stars = [], []
+names,plot_dicts = [], []
 
 # make a analysis of repos
 for repo_dicts in repo_dicts:
-    names.append(repo_dicts['name'])
-    stars.append(repo_dicts['stargazers_count'])
+    plot_dict ={
+        'value': repo_dicts['stargazers_count'],
+        'label': repo_dicts['name'],
+        'xlink': repo_dicts['html_url']
+    }
+    plot_dicts.append(plot_dict)
     # print("\nSelected information about the first repository:")
     # print("\nNmae:",repo_dicts['name'])
     # print("\nOwner:",repo_dicts['owner']['login'])
@@ -53,5 +57,5 @@ chart = pygal.Bar(my_config,style=my_style)
 chart.title= 'Most-Starred Pyhton Projects on GitHub'
 chart.x_labels = names
 
-chart.add('',stars)
+chart.add('',plot_dicts)
 chart.render_to_file('python_repos.svg')
