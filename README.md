@@ -1,4 +1,4 @@
-# Project Title
+# API TESTS
 
 A project example to handle python api calls using public apis
 
@@ -37,7 +37,7 @@ And that's it
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
